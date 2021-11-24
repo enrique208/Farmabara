@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8">
+ <title> Ejemplo JS</title>
+</head>
+<body>
+  <h1>Mi primer ejercicio</h1>
+  <p id="seccion1">Este es un contenido de HTML</p>
+
+  <!--Vamos a colocar un boton para cambiar el contenido del parrafo -->
+  <button type="button" name="button"
+  onclick='document.getElementById("seccion1").innerHTML= "Hola, soy JS!" '>Dame click</button>
+  <button type="button" name="button"
+  onclick='document.getElementById("seccion1").innerHTML= "Putos" '>Dame click</button>
+
+<!--Vamos a cambiar una imagen por otra con JS -->
+<h2>Cambio de imagenes</h2>
+
+<button type="button" name="button"
+onclick="document.getElementById('imagen1').src='C:\Users\Enriq\Documents\ejemplo'">Cambia de imagen a un Tsuru Tuneado</button>
+
+<img id ="imagen1" src="C:\Users\MarioB\Videos\Programacion Web\Ejemplo.jpg" alt="C:/Users/MarioB/Videos/Programacion Web/Ejemplo">
+
+<button type="button" name="button"
+onclick="document.getElementById('imagen1').src='Ejemplo.jpg'">Cambia de imagen a un meme</button>
+
+<!--Obtener la hora en tiempo real -->
+
+
+<p id="fechaA">Fecha actual</p>
+<button type="button" name="button"
+onclick="document.getElementById('fechaA').innerHTML= Date()" >Click para ver la fecha</button>
+
+<!-- Ocultar el contenido de un parrafo-->
+<h4>Parrafo a ocultar</h4>
+<p id="p1">Este es el parrafo que se va a ocultar</p>
+<br>
+<button type="button" name="button"
+onclick="document.getElementById('p1').style.display='none'">Ocultar parrafo gato</button>
+<button type="button" name="button"
+onclick="document.getElementById('p1').style.display='inline'">Mostrar parrafo gato</button>
+
+</body>
+
+
+
+
+
+</html>
